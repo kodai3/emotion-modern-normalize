@@ -1,0 +1,62 @@
+{
+  "name": "emotion-modern-normalize",
+  "version": "1.0.0",
+  "description": "Normalize browsers' default style for emotion/react",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "emotion",
+    "normalize",
+    "css",
+    "reset",
+    "browser",
+    "style"
+  ],
+  "author": "Kodai Suzuki <k3dai.su3@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodai3/emotion-modern-normalize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kodai3/emotion-modern-normalize/issues"
+  },
+  "homepage": "https://github.com/kodai3/emotion-modern-normalize#readme",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build:css": "node ./scripts/create.js",
+    "build:types": "tsc",
+    "build:js": "rollup -c",
+    "build": "yarn build:css && yarn build:js && yarn build:types"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@emotion/react": "^11.1.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@types/react": "^17.0.3",
+    "modern-normalize": "^1.0.0",
+    "react": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.26.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^4.2.4",
+    "utility-types": "^3.10.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.0.0",
+    "@types/react": ">=16.3.0",
+    "react": ">=16.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  }
+}

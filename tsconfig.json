@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "strict": true,
+    "declaration": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "react",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "moduleResolution": "Node"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
