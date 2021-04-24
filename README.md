@@ -4,11 +4,13 @@ Normalize browsers' default style for [Emotion](https://github.com/emotion-js/em
 
 The original `modern-normalize` is pulled from [sindresorhus/modern-normalize](https://github.com/sindresorhus/modern-normalize), and parsed into emotion ready format.
 
-## Usage
+## Install
 
 ```sh
 yarn add emotion-modern-normalize
 ```
+
+## Usage
 
 ```js
 import { ModernNormalize } from "emotion-modern-normalize";
@@ -21,7 +23,7 @@ import { css } from "@emotion/react";
 
 ## License
 
-The [MIT License](LICENSE)
+The [MIT License](license)
 
 ## Credits
 
